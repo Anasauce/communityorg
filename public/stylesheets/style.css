@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+a.community-link {
+  text-align: right;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a.community-link:hover {
+  text-decoration: underline;
+}
+
+a.community-link:visited {
+  color: white;
+}

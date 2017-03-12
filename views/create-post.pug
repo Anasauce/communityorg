@@ -1,0 +1,20 @@
+extends layout
+
+block content
+
+
+  if user
+
+    section
+      h1 Community Post
+
+    form(id="form" class="topBefore" action='/messages' method='POST')
+      input(id="name" type="text" placeholder="NAME" name="name")
+      textarea(id="message" type="text" placeholder="MESSAGE" name="message")
+      input(id="submit" type="submit" value="Enter")
+
+  else
+
+    h1 Sorry you cannot post to the community board.
+
+    a(href="/") Home
