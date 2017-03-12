@@ -7,13 +7,10 @@ block content
       filter: invert(100%);}
   head
     script(type='text/javascript', src='/static/js/analytics.js')
-    script(type='text/javascript').
-      archive_analytics.values.server_name="wwwb-app8.us.archive.org";archive_analytics.values.server_ms=193;
     link(type='text/css', rel='stylesheet', href='/static/css/banner-styles.css')
     meta(http-equiv='Content-Type', content='text/html; charset=iso-8859-1')
     title Gay Shame: A Celebration of Resistance
     style(type='text/css').
-      <!--
       body {
       background-color: #efc8c9;
       }
@@ -25,157 +22,7 @@ block content
       .style3 {font-size: 10px}
       .style4 {font-size: 10}
       .style5 {font-size: 12px}
-      -->
-  body(leftmargin='0')
-    #wm-ipp(lang='en', style='display: block;')
-      div(style='position:fixed;left:0;top:0;width:100%!important')
-        #wm-ipp-inside
-          table(style='width:100%;')
-            tbody
-              tr
-                td#wm-logo
-                  a(href='/web/', title='Wayback Machine home page')
-                    img(src='/static/images/toolbar/wayback-toolbar-logo.png', alt='Wayback Machine', width='110', height='39', border='0')
-                td.c
-                  table(style='margin:0 auto;')
-                    tbody
-                      tr
-                        td.u(colspan='2')
-                          form#wmtb(target='_top', method='get', action='/web/form-submit.jsp', name='wmtb')
-                            input#wmtbURL(type='text', name='url', value='http://gayshamesf.org/', style='width:400px;', onfocus='this.focus();this.select();')
-                            input(type='hidden', name='type', value='replay')
-                            input(type='hidden', name='date', value='20160531164408')
-                            input(type='submit', value='Go')
-                            span#wm_tb_options(style='display:block;')
-                        td.n(rowspan='2')
-                          table
-                            tbody
-                              // NEXT/PREV MONTH NAV AND MONTH INDICATOR
-                              tr.m
-                                td.b(nowrap='nowrap')
-                                  a(href='/web/20160430154541/http://gayshamesf.org/', title='30 Apr 2016') APR
-                                td#displayMonthEl.c(title='You are here: 16:44:08 May 31, 2016') MAY
-                                td.f(nowrap='nowrap')
-                                  | Jun
-                              // NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR
-                              tr.d
-                                td.b(nowrap='nowrap')
-                                  a(href='/web/20160430154541/http://gayshamesf.org/', title='15:45:41 Apr 30, 2016')
-                                    img(src='/static/images/toolbar/wm_tb_prv_on.png', alt='Previous capture', width='14', height='16', border='0')
-                                td#displayDayEl.c(style='width:34px;font-size:24px;', title='You are here: 16:44:08 May 31, 2016') 31
-                                td.f(nowrap='nowrap')
-                                  img(src='/static/images/toolbar/wm_tb_nxt_off.png', alt='Next capture', width='14', height='16', border='0')
-                              // NEXT/PREV YEAR NAV AND YEAR INDICATOR
-                              tr.y
-                                td.b(nowrap='nowrap')
-                                  a(href='/web/20150521104213/http://gayshamesf.org/', title='21 May 2015')
-                                    strong 2015
-                                td#displayYearEl.c(title='You are here: 16:44:08 May 31, 2016') 2016
-                                td.f(nowrap='nowrap')
-                                  | 2017
-                      tr
-                        td.s
-                          a.t(href='/web/20160531164408*/http://gayshamesf.org/', title='See a list of every capture for this URL') 262 captures
-                          .r(title='Timespan for captures of this URL') 11 Aug 02 - 31 May 16
-                        td.k
-                          a#wm-graph-anchor(href='')
-                            #wm-ipp-sparkline(title='Explore captures for this URL')
-                              img#sparklineImgId(alt='sparklines', onmouseover='__wm.st(1)', onmouseout='__wm.st(0)', onmousemove='__wm.mv(event,this)', width='550', height='27', border='0', src='/web/jsp/graph.jsp?graphdata=550_27_1996:-1:000000000000_1997:-1:000000000000_1998:-1:000000000000_1999:-1:000000000000_2000:-1:000000000000_2001:-1:000000000000_2002:-1:000000013120_2003:-1:020114111422_2004:-1:001034007030_2005:-1:236213052626_2006:-1:f30724320365_2007:-1:410012324710_2008:-1:111111001002_2009:-1:011111111110_2010:-1:111110211110_2011:-1:111111432100_2012:-1:511110000110_2013:-1:100000000011_2014:-1:001210112203_2015:-1:111312121112_2016:4:223210000000_2017:-1:000000000000')
-                              .yt(style='display: none; width: 25px; height: 27px;')
-                              .mt(style='display: none; width: 2px; height: 27px;')
-                td.r
-                  a(href='#close', onclick='__wm.h();return false;', style='background-image:url(/static/images/toolbar/wm_tb_close.png);top:5px;', title='Close the toolbar') Close
-                  a(href='http://faq.web.archive.org/', style='background-image:url(/static/images/toolbar/wm_tb_help.png);bottom:5px;', title='Get some help using the Wayback Machine') Help
-    // BEGIN WAYBACK TOOLBAR INSERT
-    script(type='text/javascript', src='/static/js/disclaim-element.js')
-    script(type='text/javascript', src='/static/js/graph-calc.js')
-    script(type='text/javascript').
-      //<![CDATA[
-      var __wm = (function(imgWidth,imgHeight,yearImgWidth,monthImgWidth){
-      var wbPrefix = "/web/";
-      var wbCurrentUrl = "http://gayshamesf.org/";
-      var firstYear = 1996;
-      var displayDay = "31";
-      var displayMonth = "May";
-      var displayYear = "2016";
-      var prettyMonths = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-      var $D=document,$=function(n){return document.getElementById(n)};
-      var trackerVal,curYear = -1,curMonth = -1;
-      var yearTracker,monthTracker;
-      function showTrackers(val) {
-      if (val===trackerVal) return;
-      var $ipp=$("wm-ipp");
-      var $y=$("displayYearEl"),$m=$("displayMonthEl"),$d=$("displayDayEl");
-      if (val) {
-      $ipp.className="hi";
-      } else {
-      $ipp.className="";
-      $y.innerHTML=displayYear;$m.innerHTML=displayMonth;$d.innerHTML=displayDay;
-      }
-      yearTracker.style.display=val?"inline":"none";
-      monthTracker.style.display=val?"inline":"none";
-      trackerVal = val;
-      }
-      function trackMouseMove(event,element) {
-      var eventX = getEventX(event);
-      var elementX = getElementX(element);
-      var xOff = Math.min(Math.max(0, eventX - elementX),imgWidth);
-      var monthOff = xOff % yearImgWidth;
-      var year = Math.floor(xOff / yearImgWidth);
-      var monthOfYear = Math.min(11,Math.floor(monthOff / monthImgWidth));
-      // 1 extra border pixel at the left edge of the year:
-      var month = (year * 12) + monthOfYear;
-      var day = monthOff % 2==1?15:1;
-      var dateString = zeroPad(year + firstYear) + zeroPad(monthOfYear+1,2) +
-      zeroPad(day,2) + "000000";
-      $("displayYearEl").innerHTML=year+firstYear;
-      $("displayMonthEl").innerHTML=prettyMonths[monthOfYear];
-      // looks too jarring when it changes..
-      //$("displayDayEl").innerHTML=zeroPad(day,2);
-      var url = wbPrefix + dateString + '/' +  wbCurrentUrl;
-      $("wm-graph-anchor").href=url;
-      if(curYear != year) {
-      var yrOff = year * yearImgWidth;
-      yearTracker.style.left = yrOff + "px";
-      curYear = year;
-      }
-      if(curMonth != month) {
-      var mtOff = year + (month * monthImgWidth) + 1;
-      monthTracker.style.left = mtOff + "px";
-      curMonth = month;
-      }
-      }
-      function hideToolbar() {
-      $("wm-ipp").style.display="none";
-      }
-      function bootstrap() {
-      var $spk=$("wm-ipp-sparkline");
-      yearTracker=$D.createElement('div');
-      yearTracker.className='yt';
-      with(yearTracker.style){
-      display='none';width=yearImgWidth+"px";height=imgHeight+"px";
-      }
-      monthTracker=$D.createElement('div');
-      monthTracker.className='mt';
-      with(monthTracker.style){
-      display='none';width=monthImgWidth+"px";height=imgHeight+"px";
-      }
-      $spk.appendChild(yearTracker);
-      $spk.appendChild(monthTracker);
-      var $ipp=$("wm-ipp");
-      $ipp&&disclaimElement($ipp);
-      }
-      return{st:showTrackers,mv:trackMouseMove,h:hideToolbar,bt:bootstrap};
-      })(550, 27, 25, 2);//]]>
-    style(type='text/css').
-      body {
-      margin-top:0 !important;
-      padding-top:0 !important;
-      min-width:800px !important;
-      }
-    script(type='text/javascript').
-      __wm.bt();
-    // END WAYBACK TOOLBAR INSERT
+
     p(align='center')  
     p(align='center')  
     p(align='center')
@@ -200,9 +47,3 @@ block content
                   a(href='index2.php') is a celebration of resistance: All Are Welcome.
     p(align='center')
       strong
-    //
-      FILE ARCHIVED ON 16:44:08 May 31, 2016 AND RETRIEVED FROM THE
-      INTERNET ARCHIVE ON 3:49:49 Mar 12, 2017.
-      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
-      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
-      SECTION 108(a)(3)).
