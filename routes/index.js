@@ -11,6 +11,10 @@ router.get('/index', (request, response, next) => {
   response.render('index')
 })
 
+router.get('/about', (request, response, next) => {
+  response.render('about')
+})
+
 router.get('/post', (request, response, next) => {
   response.render('create-post')
 })
