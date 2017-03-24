@@ -1,49 +1,260 @@
-extends layout
-
-block content
-  head
-    style.
-      body{background:#FC78C5; letter-spacing:1px;line-height:200%;color:white;} img:hover{-webkit-filter: invert(100%);
-      filter: invert(100%);}
-  head
-    script(type='text/javascript', src='/static/js/analytics.js')
-    link(type='text/css', rel='stylesheet', href='/static/css/banner-styles.css')
-    meta(http-equiv='Content-Type', content='text/html; charset=iso-8859-1')
-    title Gay Shame: A Celebration of Resistance
-    style(type='text/css').
-      body {
-      background-color: #efc8c9;
-      }
-      .style1 {
-      color: #ec4692;
-      font-family: "Courier New", Courier, mono;
-      }
-      .style2 {font-size: 9px}
-      .style3 {font-size: 10px}
-      .style4 {font-size: 10}
-      .style5 {font-size: 12px}
-
-    p(align='center')  
-    p(align='center')  
-    p(align='center')
-      a(href='index2.php')
-        img(src='images/gssf_entry.jpg', alt='Gay Shame San Francisco', width='700', height='150', border='0', align='baseline')
+head
+  link(type='text/css', rel='stylesheet', href='/static/css/banner-styles.css')
+  title Gay Shame: A Celebration of Resistance
+  meta(http-equiv='Content-Type', content='text/html; charset=iso-8859-1')
+  style(type='text/css').
+    a {
+    text-decoration: none;
+    }
+    .menu {
+    position: absolute;
+    left: 10px;
+    width: 100px;
+    border: 1px solid white;
+    background-color: #EFEFF7;
+    layer-background-color: #CCCCCC;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    visibility: hidden;}
+    body {
+    background-color: #efc8c9;
+    }
+    .style1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    body,td,th {
+    font-family: Times New Roman, Times, serif;
+    font-size: 14px;
+    color: #000000;
+    }
+    a:link {
+    color: ec2983;
+    }
+    a:visited {
+    color: ec2983;
+    }
+    a:hover {
+    color: ec2983;
+    }
+    a:active {
+    color: ec2983;
+    }
+    .style42 {font-family: Arial, Helvetica, sans-serif; color: #EC2983;}
+    .style44 {font-family: Arial, Helvetica, sans-serif; color: #ec2983; }
+    .style49 {
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .style52 {color: #EC2983}
+    .style53 {
+    font-weight: bold;
+    font-style: italic;
+    }
+  body(leftmargin='0', topmargin='0', bottommarginwidth='0', marginheight='0', data-gr-c-s-loaded='true', cz-shortcut-listen='true')
+    table(border='0', cellpadding='0', cellspacing='0', width='100%')
+      tbody
+        tr
+          td(align='left', bgcolor='#efc7c8', width='90%')
+            span.style1
+              a.style2(name='top')
+            img(src='/images/gayshamenavbar.jpg', usemap='#top_bar', align='left', border='0', height='75', hspace='0', vspace='0', width='800')
+            map(name='top_bar')
+              area(shape='RECT', coords='301,51,364,69', href='/web/20160524100638/http://gayshamesf.org/about.html', alt='About', onmouseout="window.status=''; return true", onmouseover="window.status='About Gay Shame'; return true")
+              area(shape='RECT', coords='374,52,444,68', href='/web/20160524100638/http://gayshamesf.org/archives.html', alt='Archives', onmouseout="window.status=''; return true", onmouseover="window.status='Archives'; return true")
+              area(shape='RECT', coords='464,48,567,69', href='/web/20160524100638/http://gayshamesf.org/images.html', alt='Image Gallery', onmouseout="window.status=''; return true", onmouseover="window.status='Image Gallery'; return true")
+              area(shape='RECT', coords='586,49,645,67', href='/web/20160524100638/http://gayshamesf.org/links.html', alt='Links', onmouseout="window.status=''; return true", onmouseover="window.status='Links'; return true")
+              area(shape='RECT', coords='660,50,748,67', href='/web/20160524100638/http://gayshamesf.org/contact.html', alt='Contact Us', onmouseout="window.status=''; return true", onmouseover="window.status='Contact Us'; return true")
+              area(shape='POLY', coords='54,6,36,70,88,73,104,54,171,70,238,68,282,41,239,23,207,14,194,34,157,30,151,9,54,6,53,6,52,7,54,7,53,7,51,10', href='/web/20160524100638/http://gayshamesf.org/index2.php', alt='', onmouseout="window.status=''; return true", onmouseover="window.status=''; return true")
     div(align='center')
-      table(width='639', height='186', border='0')
+      p  
+      table(width='500', border='2')
         tbody
           tr
-            th(width='629', height='180', scope='col')
-              .style1(align='center')
+            td
+              div(align='center')
+                a(href='/web/20160524100638/http://www.gayshamesf.org/about.html#meetings')
+                  font(size='6')
+                    b
+                      | The next meeting will be
+                      | Saturday May 28, 2016      -- see you there!
+      br
+      table(width='650', height='40', border='2')
+        tbody
+          tr
+            td
+              div(align='center')
                 p
-                  span.style2
-                    span.style3
-                      span.style4
-                        span.style5
-                          strong  GAY SHAME
-                          |  is a Virus in the System. We are committed to a queer extravaganza that brings direct action to astounding levels of theatricality. We will not be satisfied with a commercialized gay identity that denies the intrinsic links between queer struggle and challenging power. We seek nothing less than a new queer activism that foregrounds race, class, gender and sexuality, to counter the self-serving “values” of gay consumerism and the increasingly hypocritical left. We are dedicated to fighting the rabid assimilationist monster with a devastating mobilization of queer brilliance.
-                p.style5
-                  strong
-                    a(href='index2.php') GAY SHAME
-                  a(href='index2.php') is a celebration of resistance: All Are Welcome.
-    p(align='center')
-      strong
+                  font(size='2')
+                    b
+                    | GAY SHAME meets every Saturday in the Tede Mathews Reading Room of Modern Times Bookstore @
+                    a.style10(href='/web/20160524100638/http://maps.yahoo.com/#q=2919+24th+St%2C+San+Francisco%2C+CA+94110&tt=Modern Times Bookstore&lat=37.752561&lon=-122.410553&zoom=16&mvt=m&trf=0&start=1&bid=88251328', target='_blank', title='click for a map!') 2919 24th Street btn Florida & Alabama Streets.
+                    |  Meeting time is 6:30PM, which means that people begin to arrive at 6:30PM and we start the meeting no later than 6:45PM. In addition, we often hold smaller meetings throughout the week to plan specific actions and activities.
+                table(width='650', height='40', border='2')
+                  tbody
+                    tr
+                      td
+                        div(align='center')
+                          p
+                          p
+                            img(src='images/gayshamealamoaction.jpg', width='550')
+                          p
+                          p
+                          p
+                            img(src='images/kinkcomaction.jpg', width='550')
+                          p
+                            img(src='images/kinkaction2.jpg', width='550', longdesc='http://images/GS recent press color.jpg')
+                            br
+                          p
+                            img(src='images/kinkaction3.jpg', width='600')
+                          p
+                            font(size='2')
+                              | Racist pro-eviction lawyers frame black protester, as if gentrification wasn't racist enough. This is footage from our demo to disrupt attorney Daniel Bornstein's shameless seminar to help landlords use the Ellis Act to evict protected tenants (and fish for more clients)! If you see your landlord in this video then they are planning to evict you!
+                          p
+                            font(size='2')
+                              iframe(width='300', height='169', src='/web/20160524100638if_/http://www.youtube.com/embed/7I-4T6ORQiE', frameborder='0', allowfullscreen='')
+                          p
+                            font(size='2')
+                              b
+                          p
+                            font(size='2')
+                              img(src='images/BBevictionaction.jpg', width='612')
+                          p
+                            font(size='2')
+                              img(src='images/martiallaw2013.jpg', width='500')
+                          p
+                            font(size='2')
+                              img(src='/images/gayshameinfo.jpeg', width='500')
+                          p
+                table(border='1', width='703')
+                  tbody
+                    tr
+                      td(bordercolor='ec2983', scope='col', align='left', bgcolor='#cccccc', height='50', valign='top')
+                        p
+                          a(href='/web/20160524100638/http://gayshamesf.org/about.html#meetings')
+                            img(src='/images/marywantsyou.jpg', border='0', height='99', width='218')
+                          br
+                          a(href='/web/20160524100638/http://gayshamesf.org/farehikesormarriage.html')
+                            img(src='/images/laney-marriage-stencils-7-2.jpg', width='218')
+                            br
+                          a(href='/web/20160524100638/http://gayshamesf.org/samanthasaxaphone.html')
+                            img(src='/images/breakthebondbysamantha.jpg', width='218')
+                          br
+                          img(src='/images/legalizeassimilationshirt.jpg', width='218')
+                          br
+                          img(src='/images/gavinnonprofitscantriot.jpg', width='218')
+                          br
+                          a(href='/web/20160524100638/http://gayshamesf.org/homosforhomosapiens.html')
+                            img(src='/images/busstopposter.jpg', width='218</a')
+                        a(href='/web/20160524100638/http://gayshamesf.org/homosforhomosapiens.html')
+                      th(colspan='2', rowspan='9', scope='col', background='images/bg_bandana.jpg', bgcolor='#acaead', valign='top')
+                        h2.style34(style='margin: 0in 6pt 0pt; line-height: normal;', align='center')
+                          p(align='justify')
+                          div(align='CENTER')
+                            object(width='400', height='260')
+                              param(name='movie', value='http://www.youtube.com/v/__B-1jK-HH0?fs=1&hl=en_US')
+                              param(name='allowFullScreen', value='true')
+                              param(name='allowscriptaccess', value='always')
+                              embed(src='/web/20160524100638oe_/http://www.youtube.com/v/__B-1jK-HH0?fs=1&hl=en_US', type='application/x-shockwave-flash', allowscriptaccess='always', allowfullscreen='true', width='400', height='260')
+                            br
+                            br
+                            | read more about our action
+                            a(href='/web/20160524100638/http://www.bilerico.com/2010/10/gay_shames_emergency_kuarantine.php') here!!!
+                            img(src='/images/EMERGENCY_QUARANTINE.jpg', width='400')
+                            br
+                            br
+                            img(src='/images/OUTBREAKALERTSICK.jpg', width='400')
+                            br
+                            br
+                            a(href='/web/20160524100638/http://gayshamesf.org/cry-in-pics.html')
+                              img(src='/images/cry-inrev.jpg', width='400')
+                              br
+                              img(src='/images/crypic1.jpg', width='400')
+                              br
+                              | PICS FROM THE CRY-IN!
+                            br
+                            br
+                            a(href='/web/20160524100638/http://gayshamesf.org/creatingchainszinereprint.html')
+                              img(src='/images/cccc.jpg', width='400')
+                              br
+                              | CREATING CHANGE ZINE REPRINT!
+                            br
+                            br
+                            a(href='/web/20160524100638/http://gayshamesf.org/centerofdecenterthecenter.html')
+                              img(src='/images/gay_shame_022.jpg', width='400')
+                              br
+                              | GAY SHAME DE-CENTERS THE CENTER!
+                            br
+                            br
+                    tr
+                      td(bordercolor='ec2983', scope='col', align='left', bgcolor='#cccccc', valign='top')
+                        object(classid='clsid:D27CDB6E-AE6D-11cf-96B8-444553540000', width='218', height='218')
+                          param(name='movie', value='http://current.com/e/89142736/en_US')
+                          param(name='wmode', value='transparent')
+                          param(name='allowfullscreen', value='true')
+                          param(name='allowscriptaccess', value='always')
+                          embed(type='application/x-shockwave-flash', src='/web/20160524100638oe_/http://current.com/e/89142736/en_US', width='218', height='218', wmode='transparent', allowfullscreen='true', allowscriptaccess='always')
+                    tr
+                      td
+                        img(src='/images/sanctuary-city-for-the-rich.jpg', width='218')
+                        br
+                        a(href='/web/20160524100638/http://gayshamesf.org/duanna.html')
+                          img(src='/images/duanna.jpg', width='218')
+                        br
+                        param(name='movie', value='http://current.com/e/89792719/en_US')
+                        param(name='wmode', value='transparent')
+                        param(name='allowfullscreen', value='true')
+                        param(name='allowscriptaccess', value='always')
+                        embed(src='/web/20160524100638oe_/http://current.com/e/89792719/en_US', type='application/x-shockwave-flash', width='218', wmode='transparent', allowfullscreen='true', allowscriptaccess='always')
+                        br
+                        img(src='/images/bartKILLS.jpg', title="we don't know who made this sticker, but we love it!", width='218')
+                        br
+                        a(href='/web/20160524100638/http://endthegentrificationofpolkstreet.blogspot.com/', title='check it out and leave a comment!')
+                          img(src='/images/LPNblogteasertag.jpg', width='218', height='99', border='0')
+                        br
+                        br
+                        a(href='/web/20160524100638/http://gayshamesf.org/sound/NJ4%20minute%20PSA%20042008%20v2.mp3', title='Minute-long PSA for pirate and indie radio broadcast. Download!')
+                          img(src='/images/nj4PSAbutton60.jpg', width='218', height='99', border='0')
+                        br
+                        p
+                    tr
+                      td.style42(bordercolor='ec2983', scope='col', align='left', bgcolor='#ffffff', height='289', valign='top')
+                        a(href='/web/20160524100638/http://gayshamesf.org/sound.html')
+                          img(src='/images/soundpagebutton.jpg', width='218', height='99', border='0')
+                        br
+                        a(href='/web/20160524100638/http://gayshamesf.org/yesummaybeumno.html', height='214', width='209')
+                          img(src='/images/gsa-says-maybe-button.jpg')
+                        br
+                        a(href='/web/20160524100638/http://gayshamesf.org/againstpsychiatry.html')
+                          img(src='/images/against-psychiatry-button.jpg', width='218', height='99', border='0')
+                        br
+                        a(href='/web/20160524100638/http://gayshamesf.org/talkintrash.html', title='interviews with gay shame participants!')
+                          img(src='/images/trashtalkingteaser.jpg', width='218', height='151', border='0')
+                        p
+                          a(href='/web/20160524100638/http://gayshamesf.org/lpn.html')
+                            img(src='/images/PolkStreetGulchMapmini.jpg', border='0', height='285', width='214')
+                    tr
+                      td.style42(bordercolor='ec2983', scope='col', align='left', bgcolor='#cccccc', height='68', valign='top', width='214')
+                        ul
+                          li
+                            span.style52
+                              a.style42(href='/web/20160524100638/http://gayshamesf.org/lpn.html')
+                                | Read About the
+                                span.style53 Lower
+                                strong
+                                  em Polk Neighbors
+                                | , the brutal gentrification squad dedicated to stamping out the "undesirables" of Polk Street.
+                    tr
+                      td(bordercolor='ec2983', scope='col', align='left', bgcolor='#000000', height='30', valign='top')
+                        a(href='/web/20160524100638/http://lists.riseup.net/www/subrequest/gayshamesf', target='_blank')
+                          img(src='/images/listserv.jpg', border='0', height='47', width='214')
+                    tr
+                      td(bordercolor='ec2983', scope='col', align='left', bgcolor='#cccccc', height='70', valign='top', width='214')
+                        ul
+                          li.style42
+                            a.style44(href='/web/20160524100638/http://gayshamesf.org/gaybid.html')
+                              | Read About the
+                              strong
+                                em Gay Business Improvement District
+                              |  Proposed for Oakland, CA.
