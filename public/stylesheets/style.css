@@ -21,3 +21,15 @@ a.community-link:hover {
 a.community-link:visited {
   color: white;
 }
+
+.nofindy {
+  text-align: center;
+}
+
+.nofindy h1 {
+  font-size: 5em;
+}
+
+.nofindy h2 {
+  font-size: 3em;
+}

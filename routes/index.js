@@ -7,7 +7,7 @@ router.get('/', (request, response, next) => {
   response.render('splash', { title: 'Gay Shame' });
 })
 
-router.get('/index', (request, response, next) => {
+router.get('/home', (request, response, next) => {
   response.render('index')
 })
 
@@ -31,6 +31,8 @@ router.get('/community', (request, response, next) => {
 router.post('/messages', function(request, response, next){
   res.redirect('/community')
 })
+
+
 
 
 module.exports = router;
