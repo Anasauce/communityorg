@@ -15,22 +15,26 @@ router.get('/about', (request, response, next) => {
   response.render('about')
 })
 
-router.get('/post', (request, response, next) => {
-  response.render('create-post')
+router.get('/archives', (request, response, next) => {
+  response.render('archives')
 })
 
-router.get('/community', (request, response, next) => {
-  // db.getMessages()
-  //   .then( function(messages){
-  //     response.render('message-board', {messages:messages});
-  //   })
+// router.get('/post', (request, response, next) => {
+//   response.render('create-post')
+// })
 
-  response.render('message-board')
-});
-
-router.post('/messages', function(request, response, next){
-  res.redirect('/community')
-})
+// router.get('/community', (request, response, next) => {
+//   // db.getMessages()
+//   //   .then( function(messages){
+//   //     response.render('message-board', {messages:messages});
+//   //   })
+//
+//   response.render('message-board')
+// });
+//
+// router.post('/messages', function(request, response, next){
+//   res.redirect('/community')
+// })
 
 
 module.exports = router;
